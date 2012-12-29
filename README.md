@@ -21,8 +21,8 @@ e.g. Mytest.Tests.ps1
 
 ```powershell
 Describe 'Try Pester' {
-    It 'test a fail' { 1/0 }
-    It 'test a pass' { $true.should.be($true) }
+    It 'tests a fail' { 1/0 }
+    It 'tests a pass' { $true.should.be($true) }
 }
 ```
 
