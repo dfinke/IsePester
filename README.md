@@ -16,6 +16,8 @@ You can use IsePester to run a saved script file loaded into ISE. It muset be na
 
 e.g. Mytest.Tests.ps1
 
+(https://github.com/dfinke/IsePester/blob/master/RunningPesterInISE.png "ISE and Pester" )
+
 #Sample Test
 
 ```powershell
