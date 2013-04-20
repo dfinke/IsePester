@@ -5,7 +5,7 @@
     <version>1.0.0</version>
     <title>IsePester</title>
     <authors>Doug Finke</authors>
-    <owners>Doug Fink, Matt Wrock</owners>
+    <owners>Doug Finke, Matt Wrock</owners>
     <summary>Module to integrate PowerShell Pester into ISE</summary>
     <description>Module to integrate PowerShell Pester into ISE</description>
     <tags>powershell ISE Pester Unit Testing</tags>
