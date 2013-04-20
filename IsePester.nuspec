@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>IsePester</id>
+    <version>1.0.0</version>
+    <title>IsePester</title>
+    <authors>Doug Finke</authors>
+    <owners>Doug Fink, Matt Wrock</owners>
+    <summary>Module to integrate PowerShell Pester into ISE</summary>
+    <description>Module to integrate PowerShell Pester into ISE</description>
+    <tags>powershell ISE Pester Unit Testing</tags>
+    <projectUrl>https://github.com/dfinke/IsePester</projectUrl>
+    <dependencies>
+      <dependency id="pester" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="IsePester.psm1" target="tools" />
+    <file src="ChocolateyInstall.ps1" target="tools" />
+    <file src="Readme.md" target="tools" />     
+  </files>
+</package>
