@@ -27,3 +27,9 @@ Describe 'Try Pester' {
 ```
 
 ![alt-text](https://raw.github.com/dfinke/IsePester/master/RunningPesterInISE.png "ISE and Pester" )
+
+Feature
+===
+[Ian Davis](https://github.com/dfinke/IsePester/issues/2) suggested, when working on foo.ps1 with tests in foo.tests.ps1 in the same directory, triggering the Pester shortcut while in foo.ps1, the tool should look for foo.tests.ps1 and run it if it exists; otherwise, run the current file.
+
+[This is now implemented.](https://github.com/dfinke/IsePester/blob/e351376aa59f95f7d3ababa21859a49d57a42e2a/IsePester.psm1)
