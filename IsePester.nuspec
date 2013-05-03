@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>IsePester</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>IsePester</title>
     <authors>Doug Finke</authors>
     <owners>Doug Finke, Matt Wrock</owners>
