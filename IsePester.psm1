@@ -43,7 +43,7 @@ function Add-PesterMenu {
 function Get-PesterMenu {
 
     $psISE.CurrentPowerShellTab.AddOnsMenu.Submenus | 
-        Where DisplayName -Match "pester"
+        Where {$_.DisplayName -Match "pester"}
 }
 
 function Remove-PesterMenu {
