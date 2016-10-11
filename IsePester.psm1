@@ -29,13 +29,26 @@ function Invoke-IsePester
             $parts = $filename -split '\.'
             $testFilename = "{0}.tests.ps1" -f ($parts[0..($parts.Count-2)] -join '.')
 
-            Write-Debug $testFilename
+            Write-debug $testFilename
 
             if(Test-Path $testFilename) {
                 $filename = $testFilename
+            }else{
+                # Look for tests in a tests subfolder
+                $folder = join-path -path (split-path $fileName -Parent) -ChildPath Tests
+                
+                $parts = (split-path $fileName -Leaf) -split '\.'
+                $testfile = "$($parts[0]).tests.$($parts[1])"
+                
+                $testFileName = Join-Path -path $folder -ChildPath $testFile
+                # Check file exists
+                if(Test-Path $testFileName) {
+                    $filename = $testFileName
+                }
+            
             }
 
-            Write-Debug $filename
+            Write-debug $filename
         }
 
     } else {
